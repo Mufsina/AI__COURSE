@@ -2,7 +2,7 @@ import heapq
 
 def best_first_search(graph, start, goal, heuristic):
     visited = set()
-    pq = [(heuristic[start], start)]  # (heuristic value, node)
+    pq = [(heuristic[start], start)]  
 
     while pq:
         _, node = heapq.heappop(pq)
@@ -21,7 +21,7 @@ def best_first_search(graph, start, goal, heuristic):
     return False
 
 
-# --- User Input ---
+
 n = int(input("Enter number of nodes: "))
 graph = {}
 heuristic = {}
