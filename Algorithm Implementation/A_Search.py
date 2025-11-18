@@ -1,7 +1,7 @@
 import heapq
 
 def a_star(graph, start, goal, heuristic, cost):
-    pq = [(heuristic[start], 0, start)]  # (f = g+h, g, node)
+    pq = [(heuristic[start], 0, start)] 
     visited = {}
 
     while pq:
@@ -21,7 +21,7 @@ def a_star(graph, start, goal, heuristic, cost):
     return float("inf")
 
 
-# ---------------- User Input ----------------
+
 n = int(input("Enter number of nodes: "))
 graph = {}
 heuristic = {}
