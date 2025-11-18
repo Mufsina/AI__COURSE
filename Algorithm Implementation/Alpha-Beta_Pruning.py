@@ -22,7 +22,7 @@ def alphabeta(depth, node_index, is_maximizing, values, alpha, beta, max_depth):
         return best
 
 
-# --- User Input ---
+
 values = list(map(int, input("Enter leaf node values (space separated): ").split()))
 import math
 max_depth = int(math.log2(len(values)))
