@@ -13,7 +13,6 @@ def beam_search(graph, start, goal, heuristic, beam_width):
     return False
 
 
-# ---------------- User Input ----------------
 n = int(input("Enter number of nodes: "))
 graph = {}
 heuristic = {}
