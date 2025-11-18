@@ -10,7 +10,6 @@ def minimax(depth, node_index, is_maximizing, values, max_depth):
                    minimax(depth+1, node_index*2+1, True, values, max_depth))
 
 
-# --- User Input ---
 values = list(map(int, input("Enter leaf node values (space separated): ").split()))
 import math
 max_depth = int(math.log2(len(values)))
